@@ -2,7 +2,7 @@
 
 # AMI ECS-optimized (Amazon Linux 2023) - Free tier: t2.micro
 CLUSTER_NAME="cluster-bia"
-INSTANCE_TYPE="t2.micro"
+INSTANCE_TYPE="t3.micro"
 AMI_ID="ami-0f00ab2270b3813ee"
 
 vpc_id=$(aws ec2 describe-vpcs --filters Name=isDefault,Values=true --query "Vpcs[0].VpcId" --output text)
